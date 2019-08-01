@@ -4,5 +4,5 @@
 	"description": "Demo Group Description",
 	"type": "group",
 	"version": "5.2.0-V1",
-	"repoDirectory": "demo_components/data/demo_group"
+	"repoDirectory": "cloned_components/data/demo_group"
 }

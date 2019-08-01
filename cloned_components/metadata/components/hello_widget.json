@@ -4,5 +4,5 @@
 	"description": "Hello Widget Description",
 	"type": "widget",
 	"version": "5.2.0-V1",
-	"repoDirectory": "demo_components/data/hello_widget"
+	"repoDirectory": "cloned_components/data/hello_widget"
 }

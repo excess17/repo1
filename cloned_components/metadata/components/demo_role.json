@@ -4,5 +4,5 @@
 	"description": "Demo Role Description",
 	"type": "role",
 	"version": "5.2.0-V1",
-	"repoDirectory": "demo_components/data/demo_role"
+	"repoDirectory": "cloned_components/data/demo_role"
 }
