@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component>
-    <code>bpm_broker</code>
+    <code>bpm_broker_group</code>
     <description>description of bpm broker.</description>
     <dependencies>
     </dependencies>
@@ -33,7 +33,7 @@
         <resources>
         </resources>
         <execution>
-            <op>#call('deleteGroup', 'bpm_broker')</op>
+            <op>#call('deleteGroup', 'bpm_broker_group')</op>
         </execution>
     </uninstallation>
 </component>
