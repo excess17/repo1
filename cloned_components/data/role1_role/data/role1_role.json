@@ -1,6 +1,6 @@
 {
     "name": "role1",
-    "code": "role1_role_role",
+    "code": "role1_role",
     "permissions": {
   "jpnewsletter_config": true,
   "managePages": true,
