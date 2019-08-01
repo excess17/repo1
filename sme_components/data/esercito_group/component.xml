@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component>
+    <code>Esercio Default Goups</code>
+    <description>The default set of Entando groups for assigning permissions to users.</description>
+    <dependencies>
+    </dependencies>
+    <installation>
+        <tableMapping>
+            <datasource name="portDataSource">
+            </datasource>
+            <datasource name="servDataSource">
+            </datasource>
+        </tableMapping>
+        <environment code="production">
+        </environment>
+        <environment code="test">
+            <defaultSqlResources>
+                <datasource name="portDataSource">
+                </datasource>
+            </defaultSqlResources>
+        </environment>
+        <execution>
+            <op>#call('createGroup', 'esercito_group/data/esercito_group.json')</op>
+        </execution>
+    </installation>
+    <uninstallation>
+        <sqlResources>
+            <datasource name="portDataSource">
+            </datasource>
+            <datasource name="servDataSource">
+            </datasource>
+        </sqlResources>
+        <resources>
+        </resources>
+        <execution>
+            <op>#call('deleteGroup', 'esercito_group')</op>
+        </execution>
+    </uninstallation>
+</component>

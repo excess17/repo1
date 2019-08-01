@@ -1,0 +1,7 @@
+{
+    "name": "DE Demo Role",
+    "code": "esercito_role",
+    "permissions": {
+        "superuser": true
+    }
+ }

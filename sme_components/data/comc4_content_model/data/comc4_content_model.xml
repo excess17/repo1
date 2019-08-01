@@ -1,0 +1,29 @@
+<contentModel>
+  <id>8880003</id>
+  <contentType>CNG</contentType>
+  <descr>ComC4 Content Model</descr>
+  <contentShape><![CDATA[<article>
+  <div class="card-wrapper">
+<div class="card">
+<div class="card-body">
+    <h5 class="card-title big-heading">
+    $content.Titolo.text
+  </h5>
+  <p class="card-text text-justify">
+    $content.Contenuto.text
+  </p>
+  <div class="mt-3 text-left pull-left">
+    <a href="$content.Documento.attachPath" class="btn btn-primary mb-2" target="_blank">
+      <i class="fa fa-download fa-lg"></i>
+      <span>Download</span>
+    </a>
+    <p>
+      $content.Documento.text
+      <span class="upload-file-weight"></span>
+    </p>
+  </div>
+</div>
+</div>
+</div>
+</article>]]></contentShape>
+</contentModel>

@@ -1,0 +1,8 @@
+{
+  "id": "esercito_widget",
+	"name": "esercito_widget",
+	"description": "Hello Widget Description",
+	"type": "widget",
+	"version": "5.2.0-V1",
+	"repoDirectory": "sme_components/data/esercito_widget"
+}

@@ -1,0 +1,8 @@
+{
+    "id": "comc4_role",
+	"name": "Com C4 Role",
+	"description": "ComC4 Role Description",
+	"type": "role",
+	"version": "5.2.0-V1",
+	"repoDirectory": "sme_components/data/comc4_role"
+}

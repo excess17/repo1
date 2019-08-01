@@ -1,0 +1,8 @@
+{
+    "id": "comc4_group",
+	"name": "comando_c4_group",
+	"description": "Comando C4 Group Description",
+	"type": "group",
+	"version": "5.2.0-V1",
+	"repoDirectory": "sme_components/data/comando_c4_group"
+}

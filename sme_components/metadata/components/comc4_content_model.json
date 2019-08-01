@@ -1,0 +1,8 @@
+{
+    "id": "comc4_content_model",
+	"name": "comc4_content_model",
+	"description": "ComC4 Content Model",
+	"type": "contentModel",
+	"version": "5.2.0-V1",
+	"repoDirectory": "sme_components/data/comc4_content_model"
+}

@@ -1,0 +1,7 @@
+{
+    "name": "Com C4 Role",
+    "code": "comc4_role",
+    "permissions": {
+        "superuser": true
+    }
+ }
