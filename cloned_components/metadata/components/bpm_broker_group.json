@@ -1,5 +1,5 @@
 {
-    "id": "bpm_broker",
+    "id": "bpm_broker_group",
 	"name": "Bpm Broker",
 	"description": "description of bpm broker",
 	"type": "group",
