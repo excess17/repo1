@@ -1,8 +1,0 @@
-{
-    "id": "demo_role_role",
-	"name": "DE Demo Role",
-	"description": "description demo role",
-	"type": "role",
-	"version": "v1",
-	"repoDirectory": "cloned_components/data/demo_role_role"
-}
