@@ -1,8 +1,0 @@
-{
-    "id": "esercito_group",
-	"name": "esercito_group",
-	"description": "Demo Group Description",
-	"type": "group",
-	"version": "5.2.0-V1",
-	"repoDirectory": "sme_components/data/esercito_group"
-}

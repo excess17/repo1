@@ -1,8 +1,0 @@
-{
-    "id": "esercito_role",
-	"name": "esercito_role",
-	"description": "Demo Role Description",
-	"type": "role",
-	"version": "5.2.0-V1",
-	"repoDirectory": "sme_components/data/esercito_role"
-}

@@ -1,8 +1,0 @@
-{
-    "id": "esercito_content_model",
-	"name": "esercito_content_model",
-	"description": "Demo Content Model 1 Description",
-	"type": "contentModel",
-	"version": "5.2.0-V1",
-	"repoDirectory": "sme_components/data/esercito_content_model"
-}

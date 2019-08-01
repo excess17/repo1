@@ -1,8 +1,0 @@
-{
-    "id": "esercito_page_model",
-	"name": "esercito_page_model",
-	"description": "Demo Page Model 1 Description",
-	"type": "pageModel",
-	"version": "5.2.0-V1",
-	"repoDirectory": "sme_components/data/esercito_page_model"
-}
