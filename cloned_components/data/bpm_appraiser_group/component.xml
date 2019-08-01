@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component>
+    <code>bpm_appraiser_group</code>
+    <description>bpm appriser.</description>
+    <dependencies>
+    </dependencies>
+    <installation>
+        <tableMapping>
+            <datasource name="portDataSource">
+            </datasource>
+            <datasource name="servDataSource">
+            </datasource>
+        </tableMapping>
+        <environment code="production">
+        </environment>
+        <environment code="test">
+            <defaultSqlResources>
+                <datasource name="portDataSource">
+                </datasource>
+            </defaultSqlResources>
+        </environment>
+        <execution>
+            <op>#call('createGroup', 'bpm_appraiser_group/data/bpm_appraiser_group.json')</op>
+        </execution>
+    </installation>
+    <uninstallation>
+        <sqlResources>
+            <datasource name="portDataSource">
+            </datasource>
+            <datasource name="servDataSource">
+            </datasource>
+        </sqlResources>
+        <resources>
+        </resources>
+        <execution>
+            <op>#call('deleteGroup', 'bpm_appraiser_group')</op>
+        </execution>
+    </uninstallation>
+</component>
