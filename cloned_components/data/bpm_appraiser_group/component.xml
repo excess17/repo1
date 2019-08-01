@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component>
     <code>bpm_appraiser_group</code>
-    <description>bpm appriser.</description>
+    <description>description bpm appraiser.</description>
     <dependencies>
     </dependencies>
     <installation>

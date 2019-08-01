@@ -1,7 +1,7 @@
 {
-    "id": "#COMPONENT_ID_group#",
+    "id": "bpm_appraiser_group",
 	"name": "Bpm Appraiser",
-	"description": "bpm appriser",
+	"description": "description bpm appraiser",
 	"type": "group",
 	"version": "v1",
 	"repoDirectory": "cloned_components/data/bpm_appraiser_group"
