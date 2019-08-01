@@ -1,7 +1,7 @@
 {
     "name": "DE Demo Role",
     "code": "demo_role_role_role",
-    "permissions": "{
+    "permissions": {
   "jpnewsletter_config": false,
   "managePages": false,
   "editUsers": false,
@@ -18,5 +18,5 @@
   "superuser": true,
   "jpcontentfeedback_moderate": false,
   "manageCategories": false
-}"
+}
  }
