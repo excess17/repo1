@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component>
-    <code>bpm_appraiser_group</code>
-    <description>description bpm appraiser.</description>
+    <code>group1_group</code>
+    <description>group1 description.</description>
     <dependencies>
     </dependencies>
     <installation>
@@ -20,7 +20,7 @@
             </defaultSqlResources>
         </environment>
         <execution>
-            <op>#call('createGroup', 'bpm_appraiser_group/data/bpm_appraiser_group.json')</op>
+            <op>#call('createGroup', 'group1_group/data/group1_group.json')</op>
         </execution>
     </installation>
     <uninstallation>
@@ -33,7 +33,7 @@
         <resources>
         </resources>
         <execution>
-            <op>#call('deleteGroup', 'bpm_appraiser_group')</op>
+            <op>#call('deleteGroup', 'group1_group')</op>
         </execution>
     </uninstallation>
 </component>
