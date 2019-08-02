@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component>
-	<code>ANN_contentType</code>
+	<code>ANN</code>
 	<description>ANN description</description>
 	<dependencies>
 	</dependencies>
@@ -29,7 +29,7 @@
 		<resources>
 		</resources>
         <execution>
-            <op>#call('deleteContentType', 'ANN_contentType')</op>
+            <op>#call('deleteContentType', 'ANN')</op>
         </execution>
 	</uninstallation>
 </component>
