@@ -1,0 +1,22 @@
+{
+    "name": "role1",
+    "code": "role1_role",
+    "permissions": {
+  "jpnewsletter_config": true,
+  "managePages": true,
+  "editUsers": true,
+  "jpcontentfeedback_comment_edit": true,
+  "manageResources": true,
+  "enterBackend": true,
+  "editContents": true,
+  "viewUsers": true,
+  "jpwebdynamicform_manageForms": true,
+  "validateContents": true,
+  "jpcontentfeedback_rating_edit": true,
+  "editUserProfile": true,
+  "jpnewsletter_management": true,
+  "superuser": true,
+  "jpcontentfeedback_moderate": true,
+  "manageCategories": true
+}
+ }
