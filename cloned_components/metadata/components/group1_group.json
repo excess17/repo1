@@ -1,7 +1,7 @@
 {
     "id": "group1_group",
 	"name": "Group1",
-	"description": "description group1",
+	"description": "Description of group1",
 	"type": "group",
 	"version": "v1",
 	"repoDirectory": "cloned_components/data/group1_group"

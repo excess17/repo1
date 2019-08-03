@@ -1,7 +1,7 @@
 {
     "id": "role3_role",
 	"name": "Role3",
-	"description": "role3 description",
+	"description": "Description of role3",
 	"type": "role",
 	"version": "v1",
 	"repoDirectory": "cloned_components/data/role3_role"
