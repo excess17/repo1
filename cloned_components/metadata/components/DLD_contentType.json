@@ -1,8 +1,0 @@
-{
-    "id": "DLD",
-	"name": "Download Card",
-	"description": "description",
-	"type": "contentType",
-	"version": "v1",
-	"repoDirectory": "cloned_components/data/DLD_contentType"
-}
