@@ -1,0 +1,8 @@
+{
+    "id": "ANN_contentType",
+	"name": "Announcement",
+	"description": "Ann description",
+	"type": "contentType",
+	"version": "v1",
+	"repoDirectory": "cloned_components/data/ANN_contentType"
+}
