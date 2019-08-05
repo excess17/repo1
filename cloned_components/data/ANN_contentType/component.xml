@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component>
-	<code>ANN</code>
+	<code>ANN_contentType</code>
 	<description>Ann description</description>
 	<dependencies>
 	</dependencies>
