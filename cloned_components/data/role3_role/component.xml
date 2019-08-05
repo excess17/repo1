@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component>
     <code>role3_role</code>
-    <description>Description of role3</description>
+    <description>role3 description</description>
     <dependencies>
     </dependencies>
     <installation>
