@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component>
-	<code>127448</code>
-	<description>abc content model description.</description>
+	<code>192306</code>
+	<description>12345 content model.</description>
 	<dependencies>
 	</dependencies>
 	<installation>
@@ -29,7 +29,7 @@
 		<resources>
 		</resources>
         <execution>
-            <op>#call('deleteContentModel', 127448)</op>
+            <op>#call('deleteContentModel', 192306)</op>
         </execution>
 	</uninstallation>
 </component>

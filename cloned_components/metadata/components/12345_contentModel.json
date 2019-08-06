@@ -1,7 +1,7 @@
 {
-    "id": "127448",
+    "id": "192306",
 	"name": "ABC Content Model",
-	"description": "abc content model description",
+	"description": "12345 content model",
 	"type": "contentModel",
 	"version": "v1",
 	"repoDirectory": "cloned_components/data/12345_contentModel"

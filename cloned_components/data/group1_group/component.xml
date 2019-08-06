@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component>
     <code>group1_group</code>
-    <description>description group1.</description>
+    <description>group1 description.</description>
     <dependencies>
     </dependencies>
     <installation>
