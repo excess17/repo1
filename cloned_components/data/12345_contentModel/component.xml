@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component>
-	<code>152093</code>
-	<description>ABC content model.</description>
+	<code>127448</code>
+	<description>abc content model description.</description>
 	<dependencies>
 	</dependencies>
 	<installation>
@@ -16,7 +16,7 @@
 		<environment code="test">
 		</environment>
         <execution>
-            <op>#call('createContentModel', '152093_contentModel/data/152093_contentModel.xml')</op>
+            <op>#call('createContentModel', '12345_contentModel/data/12345_contentModel.xml')</op>
         </execution>
 	</installation>
 	<uninstallation>
@@ -29,7 +29,7 @@
 		<resources>
 		</resources>
         <execution>
-            <op>#call('deleteContentModel', 152093)</op>
+            <op>#call('deleteContentModel', 127448)</op>
         </execution>
 	</uninstallation>
 </component>
