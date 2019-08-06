@@ -1,7 +1,7 @@
 {
     "id": "ABC_contentType",
 	"name": "ABC Content Type",
-	"description": "abc content type",
+	"description": "descr",
 	"type": "contentType",
 	"version": "v1",
 	"repoDirectory": "cloned_components/data/ABC_contentType"
