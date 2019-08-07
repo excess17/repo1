@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component>
 	<code>pagem1_pageModel</code>
-	<description>descr</description>
+	<description>description</description>
 	<dependencies>
 	</dependencies>
 	<installation>
@@ -34,7 +34,7 @@
 		<resources>
 		</resources>
         <execution>
-            <op>#call('deleteLabel', 'pagem1_pageModel')</op>
+            <op>#call('deleteLabel', 'pagem1_LABEL')</op>
             <op>#call('deletePageModel', 'pagem1_pageModel')</op>
         </execution>
 	</uninstallation>

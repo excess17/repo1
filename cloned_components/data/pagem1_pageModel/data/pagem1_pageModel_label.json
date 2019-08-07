@@ -1,7 +1,7 @@
 {
-    "key": "DE_DEMO_LABEL",
+    "key": "pagem1_LABEL",
     "titles": {
-        "it": "Ciao dalla DigitalExchange",
-        "en": "Hello From DigitalExchange"
+        "it": "Label di pagem1",
+        "en": "Label for pagem1"
     }
 }
