@@ -1,0 +1,26 @@
+<contentModel>
+  <id>184909</id>
+  <contentType>VID</contentType>
+  <descr>CDPVideo Content Model</descr>
+  <contentShape><![CDATA[<div>
+<ul class="list-unstyled">
+
+#if ($content.video.getAttachPath() != "")
+  <li id="prog_$item">
+       <figure class="col-sm-8 col-md-8 col-md-offset-2 col-sm-offset-2">
+        #if($content.video.thumbnail.getImagePath("0") != "")
+           <video style="width:100%; height:auto;" poster="$content.thumbnail.getImagePath('0')"  controls="controls" type="video/mp4">
+             <source src="$content.video.getAttachPath()#t=0.5" type="video/mp4">
+           </video>
+        #else
+                <video  style="width:100%; height:auto;" controls="controls" preload="metadata" type="video/mp4">
+             <source src="$content.video.getAttachPath()#t=0.5" type="video/mp4">
+           </video>
+        #end
+        
+     </figure>
+     </li>
+   #end
+  </ul>
+</div>]]></contentShape>
+</contentModel>

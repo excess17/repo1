@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component>
-	<code>pagem1_pageModel</code>
-	<description>pagem1 description</description>
+	<code>123456_contentModel</code>
+	<description>CDPVideo Content Model.</description>
 	<dependencies>
 	</dependencies>
 	<installation>
@@ -12,16 +12,11 @@
 			</datasource>
 		</tableMapping>
 		<environment code="production">
-			<defaultSqlResources>
-				<datasource name="portDataSource">
-				</datasource>
-            </defaultSqlResources>
 		</environment>
 		<environment code="test">
 		</environment>
         <execution>
-            <op>#call('createPageModel', 'pagem1_pageModel/data/pagem1_pageModel.json')</op>
-            <op>#call('createLabel', 'pagem1_pageModel/data/pagem1_pageModel_label.json')</op>
+            <op>#call('createContentModel', '123456_contentModel/data/123456_contentModel.xml')</op>
         </execution>
 	</installation>
 	<uninstallation>
@@ -34,8 +29,7 @@
 		<resources>
 		</resources>
         <execution>
-            <op>#call('deleteLabel', 'pagem1_LABEL')</op>
-            <op>#call('deletePageModel', 'pagem1_pageModel')</op>
+            <op>#call('deleteContentModel', 184909)</op>
         </execution>
 	</uninstallation>
 </component>
