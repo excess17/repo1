@@ -1,7 +1,7 @@
 {
     "id": "pagem1_pageModel",
 	"name": "pagem1",
-	"description": "desr",
+	"description": "description pagem1",
 	"type": "pageModel",
 	"version": "v1",
 	"repoDirectory": "cloned_components/data/pagem1_pageModel"
