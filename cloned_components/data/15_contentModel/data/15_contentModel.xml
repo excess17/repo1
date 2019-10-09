@@ -1,0 +1,167 @@
+<contentModel>
+  <id>104799</id>
+  <contentType>CRD</contentType>
+  <descr>dettaglio notizie in evidenza</descr>
+  <contentShape><![CDATA[
+<div class="container print">
+    <div class="p-4 pagina-dettaglio">
+
+        <div class="img-responsive-wrapper">
+            <div class="img-responsive">
+                <div class="img-wrapper">
+                    <img src="$content.img.getImagePath('0')" title="$content.img.text" alt="$content.img.text">
+                    <div class="img-detail-caption">
+                        <p class="img-detail-title">
+                            $content.title.text
+                        </p>
+                        <p class="img-detail-data">
+                            $content.date.longDate
+                        </p>
+                        <p class="img-detail-counter">
+                            <i class="far fa-eye"></i>    
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="pagina-dettaglio-wrapper">
+            <div class="row pagina-dettaglio-grey-background">
+                <div class="col-4 pagina-dettaglio-1st-row">
+                    <div class="pagina-dettaglio-categoria">
+                        #foreach ($contentCategory in $content.getCategories())  
+                        <strong>Categoria : </strong><span class="army-red">$contentCategory.title</span>
+                        #end  
+                    </div>
+                    <div class="pagina-dettaglio-fonte">
+                        <strong>Fonte : </strong>$content.fontePubbl.text
+                    </div>
+                </div>
+
+                <div class="col-4 pagina-dettaglio-2nd-row">
+                    <div class="pagina-dettaglio-argomento">
+                        <strong>Argomento : </strong> $content.argomento.text
+                    </div>
+                </div>
+
+                <!-- bottoni  -->
+                <div class="col-4 pagina-dettaglio-buttons">
+                    <a class="btn btn-army-round" href="mailto:name@email.com">
+                        <i class="far fa-envelope"></i>
+                    </a>
+                    <a class="btn btn-army-round" href="#" onClick="window.print();return false;">
+                        <i class="fas fa-print"></i>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+
+                    <div class="pagina-dettaglio-sottotitolo">
+                        $content.subtitle.text 
+                    </div>
+
+                    <div  class="pagina-dettaglio-abstract">
+                        $content.abstract.text 
+                    </div>
+
+                    <div class="pagina-dettaglio-evidenza">
+                        <i class="fas fa-quote-left"></i> $content.evidenza.text
+                    </div>
+
+                    <div class="pagina-dettaglio-abstract">
+                        $content.abstract2.text 
+                    </div>
+
+                    <div  class="pagina-dettaglio-autore">
+                        $content.autore.text
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="owl-carousel pagina-dettaglio-carousel owl-theme p-2">
+                    #foreach($item in $content.list_img)
+                    <div class="item" data-dot="<span>$item.numero.number</span>">
+                        <div class="col12 col-md-12">
+                            <div class="it-grid-item-wrapper it-grid-item-overlay">
+                                <div class="img-responsive-wrapper">
+                                    <div class="img-responsive">
+                                        <div class="img-wrapper">
+                                            <img src="$item.img.getImagePath('0')" alt="$item.img.text" title="$content.img.text">
+                                        </div>
+                                    </div>
+                                </div>
+                                <span class="it-griditem-text-wrapper">
+                                    <span class="it-griditem-text">
+                                        $item.numero.number di $content.list_img.size() 
+                                        . <span class="it-griditem-text-titolo">$item.titolo.text</span>
+                                    </span>
+
+                                    <a data-target="#img-$item.numero.number" data-toggle="modal" href="#">
+                                        <i class="fas fa-expand-arrows-alt"></i>
+                                    </a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    #end 
+                </div>
+
+                #foreach($item in $content.list_img)
+                <div aria-hidden="true" aria-labelledby="myModalLabel" class="modal fade" id="img-$item.numero.number" role="dialog" tabindex="-1">
+                    <div class="modal-dialog modal-lg" role="document">
+                        <div class="modal-content">
+                            <div class="modal-body mb-0 p-0">
+                                <img src="$item.img.getImagePath('0')" alt="$item.img.text" title="$item.img.text" style="width:100%">
+                            </div>
+                            <button class="btn btn-army btn-tp-pos" data-dismiss="modal" type="button">
+                                <i class="far fa-times-circle fa-2x"></i>
+                            </button>
+                        </div>
+                    </div> 
+                </div>   
+                #end 
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    $(document).ready(function () {
+        $('.pagina-dettaglio-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            dots: true,
+            dotsData: true,
+            autoplay: true,
+            autoplayTimeout: 3300,
+            nav: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 1
+                },
+                1000: {
+                    items: 1
+                }
+            }
+
+        });
+        var owl = $('.owl-carousel');
+        $('.owl-dot').on('click', function () {
+            owl.trigger('to.owl.carousel', [$(this).index(), 300]);
+            $('.owl-dot').removeClass('active');
+            $(this).addClass('active');
+        });
+    });
+
+</script>]]></contentShape>
+</contentModel>

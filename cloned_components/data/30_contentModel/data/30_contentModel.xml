@@ -1,0 +1,37 @@
+<contentModel>
+  <id>113083</id>
+  <contentType>CRD</contentType>
+  <descr>lista generiche card</descr>
+  <contentShape><![CDATA[<div class="col-12 col-lg-4 col-sm-12 py-2 documenti-evidenza">
+    <div class="card-wrapper card-space"> 
+        <div class="card card-bg card-big no-after">   
+   
+            <div class="card-body"> 
+                <p class="data">   
+                    $content.date.longDate  
+                </p>
+                <p class="category"> 
+                    #foreach ($contentCategory in $content.getCategories())  
+                    $contentCategory.title 
+                    #end  
+                </p> 
+
+                <h5 class="card-title"> 
+                    <a href="$content.getContentOnPageLink("dettaglio_contenuto")&modelId=14 "> 
+                      $content.Title.text	
+                </a>  
+            </h5>    
+            <p class="card-text">  
+                $content.Abstract.text
+            </p> 
+
+            <span class="data">   
+                $i18n.getLabel("EXPIRES") $content.expDate.getFormattedDate("dd-MM-YYYY")
+            </span>  
+
+        </div>  
+    </div>  
+</div>  
+</div>
+]]></contentShape>
+</contentModel>

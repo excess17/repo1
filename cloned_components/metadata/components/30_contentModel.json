@@ -1,0 +1,8 @@
+{
+    "id": "30_contentModel",
+	"name": "Lista generiche card",
+	"description": "lista generiche card",
+	"type": "contentModel",
+	"version": "v1",
+	"repoDirectory": "cloned_components/data/30_contentModel"
+}

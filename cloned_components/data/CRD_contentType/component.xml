@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component>
+	<code>CRD_contentType</code>
+	<description>card generiche</description>
+	<dependencies>
+	</dependencies>
+	<installation>
+		<tableMapping>
+			<datasource name="portDataSource">
+			</datasource>
+			<datasource name="servDataSource">
+			</datasource>
+		</tableMapping>
+		<environment code="production">
+		</environment>
+		<environment code="test">
+		</environment>
+        <execution>
+            <op>#call('createContentType', 'CRD_contentType/data/CRD_contentType.json')</op>
+        </execution>
+	</installation>
+	<uninstallation>
+		<sqlResources>
+			<datasource name="portDataSource">
+			</datasource>
+			<datasource name="servDataSource">
+			</datasource>
+		</sqlResources>
+		<resources>
+		</resources>
+        <execution>
+            <op>#call('deleteContentType', 'CRD')</op>
+        </execution>
+	</uninstallation>
+</component>

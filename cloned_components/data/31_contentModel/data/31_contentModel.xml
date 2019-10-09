@@ -1,0 +1,74 @@
+<contentModel>
+  <id>168960</id>
+  <contentType>CRD</contentType>
+  <descr>lista notizie in evidenza</descr>
+  <contentShape><![CDATA[<div class="col-lg-3">
+    <div class="it-carousel-wrapper it-carousel-landscape-abstract">
+        <div class="it-carousel-all owl-carousel highlights-news">
+            <div class="it-single-slide-wrapper">
+                <a href="$content.getContentOnPageLink("dettaglio_contenuto")&modelId=15">
+                    <div class="img-responsive-wrapper">
+                        <div class="img-responsive">
+                            <div class="img-wrapper">
+                                <img src="$content.img.getImagePath('0')" title="$content.img.text" alt="$content.img.text">
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <div class="it-text-slider-wrapper-outside">
+                    <div class="card-wrapper">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="category-top">
+                                    <!-- category heading-->
+                                    <a class="category" href="#">
+                                        #foreach ($contentCategory in $content.getCategories())  
+                                        $contentCategory.title 
+                                        #end  
+                                    </a>
+                                    <!-- category data-->
+                                    <span class="data">
+                                        $content.date.longDate
+                                    </span>
+                                    <p class="date d-none">
+                                        $content.date.longDate
+                                    </p>
+
+                                </div>
+                                
+                                <h5 class="card-title big-heading">
+                                    $content.title.text
+                                </h5>
+                                
+                                <h6 class="card-text">
+                                  $content.abstract.text 
+                                </h6>
+                                
+                                <span class="card-signature">$content.autore.text</span>
+                                <button class="btn btn-outline-primary btn-sm"> 
+                                    <a href="$content.getContentOnPageLink("dettaglio_contenuto")&modelId=15 ">  
+                                       $i18n.getLabel("READ_MORE")   
+                                </a>     
+                            </button>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   </div>
+  </div>
+
+
+<script>
+
+    $("#news-list .col-lg-3:first-child").removeClass("col-lg-3").addClass("col-lg-12 col-sm-12");
+    $("#news-list .it-carousel-wrapper").not(':first').removeClass("it-carousel-landscape-abstract");
+    $("#news-list .card-text").not(':first').addClass("d-none");
+    $("#news-list .data").not(':first').addClass("d-none");
+    $("#news-list .date").not(':first').removeClass("d-none");
+    $("#news-list button").not(':first').addClass("d-none");
+    $("#news-list .card").not(':first').addClass("card card-bg card-big no-after");
+
+</script>]]></contentShape>
+</contentModel>

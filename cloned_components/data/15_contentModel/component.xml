@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component>
+	<code>15_contentModel</code>
+	<description>dettaglio notizie in evidenza.</description>
+	<dependencies>
+	</dependencies>
+	<installation>
+		<tableMapping>
+			<datasource name="portDataSource">
+			</datasource>
+			<datasource name="servDataSource">
+			</datasource>
+		</tableMapping>
+		<environment code="production">
+		</environment>
+		<environment code="test">
+		</environment>
+        <execution>
+            <op>#call('createContentModel', '15_contentModel/data/15_contentModel.xml')</op>
+        </execution>
+	</installation>
+	<uninstallation>
+		<sqlResources>
+			<datasource name="portDataSource">
+			</datasource>
+			<datasource name="servDataSource">
+			</datasource>
+		</sqlResources>
+		<resources>
+		</resources>
+        <execution>
+            <op>#call('deleteContentModel', 104799)</op>
+        </execution>
+	</uninstallation>
+</component>

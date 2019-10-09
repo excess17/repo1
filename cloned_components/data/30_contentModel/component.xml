@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component>
+	<code>30_contentModel</code>
+	<description>lista generiche card.</description>
+	<dependencies>
+	</dependencies>
+	<installation>
+		<tableMapping>
+			<datasource name="portDataSource">
+			</datasource>
+			<datasource name="servDataSource">
+			</datasource>
+		</tableMapping>
+		<environment code="production">
+		</environment>
+		<environment code="test">
+		</environment>
+        <execution>
+            <op>#call('createContentModel', '30_contentModel/data/30_contentModel.xml')</op>
+        </execution>
+	</installation>
+	<uninstallation>
+		<sqlResources>
+			<datasource name="portDataSource">
+			</datasource>
+			<datasource name="servDataSource">
+			</datasource>
+		</sqlResources>
+		<resources>
+		</resources>
+        <execution>
+            <op>#call('deleteContentModel', 113083)</op>
+        </execution>
+	</uninstallation>
+</component>
