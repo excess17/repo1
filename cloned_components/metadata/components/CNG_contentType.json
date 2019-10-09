@@ -1,0 +1,8 @@
+{
+    "id": "CNG_contentType",
+	"name": "Card contenuto generico",
+	"description": "card-contenuto-generico",
+	"type": "contentType",
+	"version": "v1",
+	"repoDirectory": "cloned_components/data/CNG_contentType"
+}
