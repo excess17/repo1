@@ -1,8 +1,0 @@
-{
-    "id": "123456_contentModel",
-	"name": "CDPVideo",
-	"description": "CDPVideo Content Model",
-	"type": "contentModel",
-	"version": "v1",
-	"repoDirectory": "cloned_components/data/123456_contentModel"
-}
