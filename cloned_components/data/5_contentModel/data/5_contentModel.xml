@@ -1,0 +1,18 @@
+<contentModel>
+  <id>101469</id>
+  <contentType>CRD</contentType>
+  <descr>card</descr>
+  <contentShape><![CDATA[<div class="col-12 col-custom-20 col-sm-6 card-services-wrapper ">
+    <div class="card-wrapper card-services">
+        <a href="$content.link.destination" >
+            <div class="service-img">                             
+              <img class="partnerLogo" src="$content.img.getImagePath("0")" title="$content.img.text" alt="$content.img.text">           
+            </div>
+            <p class="service-title">
+                $content.title.text
+            </p>
+        </a>
+    </div>
+</div>
+]]></contentShape>
+</contentModel>

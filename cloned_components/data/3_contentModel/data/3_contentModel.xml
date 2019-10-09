@@ -1,0 +1,25 @@
+<contentModel>
+  <id>141663</id>
+  <contentType>CRD</contentType>
+  <descr>card-link-evid</descr>
+  <contentShape><![CDATA[<div class="col-12 col-custom-20 col-sm-6 link-evidenza">
+    <!--start card-->
+    <div class="card-wrapper">
+        <div class="card card-img no-after">
+            <a href="$content.link.destination" >
+                <div class="img-responsive-wrapper">
+                    <div class="img-responsive">
+                        <div class="img-wrapper">
+                            <img src="$content.img.getImagePath("0")" title="$content.img.text" alt="$content.img.text">
+                        </div>
+                    </div>
+                </div>
+                <div class="link-body">          
+                    $content.title.text           
+                </div>
+            </a>
+        </div>
+    </div>
+    <!--end card-->
+</div>]]></contentShape>
+</contentModel>

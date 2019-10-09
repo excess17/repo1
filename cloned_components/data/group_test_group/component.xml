@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component>
+    <code>group_test_group</code>
+    <description>grouppo-di-test.</description>
+    <dependencies>
+    </dependencies>
+    <installation>
+        <tableMapping>
+            <datasource name="portDataSource">
+            </datasource>
+            <datasource name="servDataSource">
+            </datasource>
+        </tableMapping>
+        <environment code="production">
+        </environment>
+        <environment code="test">
+            <defaultSqlResources>
+                <datasource name="portDataSource">
+                </datasource>
+            </defaultSqlResources>
+        </environment>
+        <execution>
+            <op>#call('createGroup', 'group_test_group/data/group_test_group.json')</op>
+        </execution>
+    </installation>
+    <uninstallation>
+        <sqlResources>
+            <datasource name="portDataSource">
+            </datasource>
+            <datasource name="servDataSource">
+            </datasource>
+        </sqlResources>
+        <resources>
+        </resources>
+        <execution>
+            <op>#call('deleteGroup', 'group_test_group')</op>
+        </execution>
+    </uninstallation>
+</component>
